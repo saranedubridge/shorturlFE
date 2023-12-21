@@ -1,0 +1,98 @@
+/* URLTable.css */
+
+/* General styles */
+.container {
+    padding: 2rem;
+  }
+  
+  /* Search input styling */
+  .form-control.my-3 {
+    padding: .8rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+  }
+  
+  /* Table styling */
+  .table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05);
+  }
+  
+  /* Pagination styling */
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+  }
+  
+  .page-link {
+    color: #007bff;
+    padding: .5rem .75rem;
+    margin-left: .125rem;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+  }
+  
+  .page-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  /* Text and Button styling */
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .btn-success,
+  .btn-danger {
+    margin: 0 .25rem;
+  }
+  
+  /* Responsive table */
+  @media (max-width: 768px) {
+    .table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
+  /* Responsive padding and margin */
+  @media (max-width: 576px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .form-control.my-3,
+    .btn-success,
+    .btn-danger {
+      padding: .5rem 1rem;
+      margin: .25rem;
+      font-size: .9rem;
+    }
+  
+    .text-margin-left {
+      margin-left: .5rem;
+    }
+  }
+  

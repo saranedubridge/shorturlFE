@@ -1,0 +1,51 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(248, 248, 248, 0.2);
+    transition: 0.3s;
+    padding: 20px;
+    background-color: #b0bfd1;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Input field styles */
+  .form-control {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  
+  /* Result styles */
+  .card-link {
+    word-break: break-all; /* This will ensure long URLs don't overflow */
+  }
+  
+  /* Error message styles */
+  .alert-danger {
+    margin-top: 15px;
+  }
+  
+
+  .row {
+    margin-top: 20px;
+    background-color: #e0e9ebd7; 
+    color: #cab8b8;
+}
+

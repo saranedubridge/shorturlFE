@@ -1,0 +1,21 @@
+.activate-container {
+    max-width: 700px;
+    margin-top: 80px;
+}
+
+.activation-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.activation-card .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #d3e2f1;
+    color: rgb(19, 17, 17);
+}
+
+
+.card-title{
+    background-color: #e1e6e9;
+}
