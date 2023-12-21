@@ -11,7 +11,7 @@ const URLTable = () => {
 
     useEffect(() => {
         const fetchURLs = async () => {
-            const response = await fetch(`http://localhost:3001/api/table?page=${currentPage}&search=${searchTerm}`);
+            const response = await fetch(`https://shorturlbe.onrender.com/api/table?page=${currentPage}&search=${searchTerm}`);
             const data = await response.json();
             setUrls(data.urls);
             setTotalPages(data.totalPages);

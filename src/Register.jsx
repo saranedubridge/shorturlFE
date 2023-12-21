@@ -16,7 +16,7 @@ function Register() {
         setError(''); // Reset any previous error
         console.log('Registering user...');
         try {
-            const response = await axios.post('http://localhost:3001/api/users', { name, email, password });
+            const response = await axios.post('https://shorturlbe.onrender.com/api/users', { name, email, password });
             if (response.status === 201) {
                 console.log('Registration successful. Check email for activation link.');
                 alert('Registration successful. Please check your email to activate your account.');

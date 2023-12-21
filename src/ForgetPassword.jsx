@@ -14,7 +14,7 @@ function PasswordResetRequest() {
         event.preventDefault();
     
         try {
-            const response = await axios.post('http://localhost:3001/api/passwordRequest', { email });
+            const response = await axios.post('https://shorturlbe.onrender.com/api/passwordRequest', { email });
     
             if (response.status === 200) {
                 alert('Password reset link sent successfully');

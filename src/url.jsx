@@ -10,7 +10,7 @@ function Url() {
 
   const GenerateShortUrl = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/url', {
+      const response = await fetch('https://shorturlbe.onrender.com/api/url', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ function Url() {
 
       if (response.ok) {
         const data = await response.json();
-        setShortUrl(`http://localhost:3001/${data.shortUrl}`); 
+        setShortUrl(`https://shorturlbe.onrender.com/${data.shortUrl}`); 
       } else {
         const errorData = await response.json();
         setError(errorData.error || 'Failed to generate short URL');

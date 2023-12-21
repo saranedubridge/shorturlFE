@@ -23,7 +23,7 @@ function PasswordReset() {
     event.preventDefault();
     try {
       console.log("Sending request with password:", password, "and token:", token);
-      const response = await axios.post(`http://localhost:3001/api/PasswordReset/${token}`, { newpassword: password });
+      const response = await axios.post(`https://shorturlbe.onrender.com/api/PasswordReset/${token}`, { newpassword: password });
 
       alert('Password updated successfully');
       navigate('/login')

@@ -39,7 +39,7 @@ const Dashboard = () => {
     });
 
     useEffect(() => {
-        fetch("http://localhost:3001/api/stats")
+        fetch("https://shorturlbe.onrender.com/api/stats")
             .then((response) => response.json())
             .then((data) => {
                 setDailyCount(data.dailyCount || 0);
